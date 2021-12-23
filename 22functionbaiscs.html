@@ -1,0 +1,77 @@
+// Reverse of an array 
+let arr = [1,2,3,4,5];
+arr.reverse();
+let arr2=[];
+for(let i=0;i<arr.length;i++){
+    arr2.unshift(arr[i]);
+}
+// Join
+let arr = [1,2,3,4,5];
+'12345'
+let str = '';
+for(let i=0;i<arr.length;i++)
+    str = str+arr[i]
+// Concat
+let arr1 = [1,2,3], arr2 = [4,5,6]
+[1,2,3,4,5,6]
+arr1.concat(arr2);
+// Finding an element in the array 
+let num = 12;
+let arr = [1,2,3,4,5,11,15,17,18,31];
+let ajay=0;
+for(let i=0;i<arr.length;i++){
+    if(arr[i] === num){          
+        ajay = 1;
+    }    
+}
+(ajay==0)?console.log('Does not exist'):console.log("Exists");
+arr.includes(num)
+*/
+/*
+reverse push, pop, shift, unshift, join
+slice
+let arr = [1,2,3,4,5,6];
+arr.slice(0,3) // Last element is not considered
+let x = 2, y=4;
+let newArr = []
+for(let i=x;i<y;i++){
+    newArr.push(arr[i])
+}
+splice
+*/
+/*
+ Functions
+*/
+
+function sayHello(){    
+    for(let i=0;i<3;i++)
+        console.log("Hello",i);
+}
+sayHello();
+
+function sayHelloTo(name){    
+    console.log("Hello", name)
+}
+
+function sayHelloToPeople(people){    
+    for(let i=0;i<people.length;i++){
+        console.log("Hello", people[i],"!")        
+    }
+}
+
+/*
+Write a function which takes a number and prints it's table
+*/
+
+function printTable(number, till){
+    for(let i=0;i<till;i++){
+        console.log(number*(i+1));
+    }
+}
+
+function printTwoTables(number1, number2){
+
+}
+printTwoTables(2,3)
+© 2021 GitHub, Inc.
+Terms
