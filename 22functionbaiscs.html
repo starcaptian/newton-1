@@ -155,7 +155,7 @@ function mirrormaze(mirrorme,reversethis){
 mirrormaze(mirror,"rahul")
 reverse of ra
 
-28/12/2021
+28/12/2021 [ARRAY ITERATIVE METHOD]
 function of an object are caled method
 arr={
     car:"my-car",
@@ -163,3 +163,126 @@ arr={
         console.log("vroom")
     }
 }
+let arr =[{name:"e",hp:4},{name:"a",hp:14},{name:"c",hp:24},{name:"d",hp:34},]
+arr.sort((a,b)  => {
+    return a.name.localecompare(b.name)
+})
+let arr =[1,2,3,4,5,6,7,8]
+for(let i=0;i<arr.length;i++){
+    if(arr[i]%2==1)
+        console.log(arr[i])
+
+1
+3
+5
+7
+1.FOREACH METHOD
+array =[1,2,3,4,5,6,7,8,9]
+(9) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+array.forEach((elem,index) =>{
+    if(elem%2==1)
+        console.log(elem)
+})
+VM940:3 1
+VM940:3 3
+VM940:3 5
+VM940:3 7
+VM940:3 9
+array.forEach((elem,index) =>{
+    if(elem%2==1)
+        console.log(elem,"is at index",index)
+})
+for prtinng the odd numbers and sum of al odd number
+let count =0;
+array.forEach((elem,index) => {
+    if(elem%2==1){
+        count=count+elem;
+            console.log(elem,index)
+}
+})
+VM1466:5 1 0
+VM1466:5 3 2
+VM1466:5 5 4
+VM1466:5 7 6
+VM1466:5 9 8
+undefined
+count
+25    
+
+CALL BACK IS A FUNCTION USE TIO GIVE ARGUEMENT TO ANOTHER FUNCTION WHIHC CALLED LATER
+let newele = [];
+
+arr.forEach((element,index) => {
+    if(element%2==1){
+        newele.push(element)
+    }
+})
+
+2.FILTER METHOD RETURN SOMETHING WEARAS FOR EACH DOESNT RETURN
+let sumodds=0;
+arr.filter((ele,ind)  =>{
+    if(ele%2==1)
+        return sumodds=sumodds+ele;
+} )
+(5) [1, 3, 5, 7, 9]
+sumodds
+25
+
+const audi =[{name:"a",hp:2},{name:"c",hp:1},{name:"v",hp:0},{name:"w",hp:4},{name:"d",hp:22},{name:"h",hp:12},{name:"d",hp:42},]
+undefined
+audi.filter((cars) => {
+    if(cars.hp>=2)
+        return true;
+})
+3.MAP METHOD
+TO RUN OVER EACH ARRAY AND TRANSFROM IT TO SOMETHING ELSE
+4.find method
+const audi =[{name:"a",hp:2},{name:"c",hp:1},{name:"v",hp:0},{name:"w",hp:4},{name:"d",hp:22},{name:"h",hp:12},{name:"d",hp:42},]
+let audi = audi.find(ele => ele.hp===0 )
+{name: 'v', hp: 0}
+5.findIndex
+const audi =[{name:"a",hp:2},{name:"c",hp:1},{name:"v",hp:0},{name:"w",hp:4},{name:"d",hp:22},{name:"h",hp:12},{name:"d",hp:42},]
+let audi = audi.find(ele => ele.hp===0 )
+3
+6.some 
+returns true if that condition is satisfied
+const audi =[{name:"a",hp:2},{name:"c",hp:1},{name:"v",hp:0},{name:"w",hp:4},{name:"d",hp:22},{name:"h",hp:12},{name:"d",hp:42},]
+undefined
+audi.some(ele => ele.hp>4)
+7.every
+const audi =[{name:"a",hp:2},{name:"c",hp:1},{name:"v",hp:0},{name:"w",hp:4},{name:"d",hp:22},{name:"h",hp:12},{name:"d",hp:42},]
+undefined
+audi.every(ele => ele.hp>4)
+false
+8.reduce method
+a.accumulation 
+b.element 
+c.index
+d.array
+arr.reduce((acc,ele) => { 
+    console.log("for the index",ele)
+    return acc+ele;
+ },0)
+VM1961:2 for the index 1
+VM1961:2 for the index 2
+VM1961:2 for the index 3
+VM1961:2 for the index 4
+10
+arr.reduce((acc,oddnumbers) =>{
+    if(oddnumbers%2==1)
+        acc.push(oddnumbers);
+    return acc;
+},[])
+(5) [1, 3, 5, 7, 9]
+01/01/2022
+closures
+function addnumbertonumber(num1){
+    return function (num2){
+        return num1+num2;
+}
+}
+const add3tonumber = addnumbertonumber(3)
+add3tonumber(3)
+
+A closure is the combination of function which is bundeled together with its variable
+ 
